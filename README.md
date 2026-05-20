@@ -1,93 +1,72 @@
-## Git Issue 建立步驟指南
+## 建立 Issue 操作步驟
+
+### 步驟 1：進入專案
+首先進入專案頁面。
+
+![進入專案](image/1.bmp)
 
 ---
 
-## 步驟一：去 GitHub / GitLab 建立 Issue
+### 步驟 2：進入專案議題頁面
+點選畫面上方導覽列的 **[Issues]** 功能標籤。
 
-當你發現 Bug 或有新需求時，請先到專案的 **Issues** 頁面點擊 **New Issue**。
-
-1. **標題命名**：請統一格式，讓人一眼看出問題模組。
-   * *修 Bug*：`[Bug] 購物車 - 點擊結帳按鈕沒反應`
-   * *新需求*：`[Feature] 會員中心 - 新增手機驗證碼登入`
-2. **填寫內文**：請複製並填寫以下結構：
-   * **問題描述**：簡短說明遇到什麼事。
-   * **重現步驟**：第 1 步、第 2 步、第 3 步做什麼才會看到錯誤。
-   * **環境與截圖**：附上瀏覽器版本、測試環境（Staging/Prod）以及錯誤畫面截圖。
-3. **送出 Issue**：送出後，請記下該 Issue 的**專屬編號**（例如：`#42`）。
+![點選上方 Issue 功能](image/2.bmp)
 
 ---
 
-## 步驟二：在本地端建立 Git 分支 (Branch)
+### 步驟 3：新增 Issue
+進入 Issues 頁面後，點選右側的綠色 **[New issue]** 按鈕。
 
-負責修復或開發該 Issue 的工程師，請依據 Issue 編號在本地端建立對應的分支。
-
-1. **同步主分支最新程式碼**：
-
-```
-
-```text
-File saved successfully at README.md
-
-```bash
-   git checkout main
-   git pull origin main
-
-```
-
-2. **建立功能分支**（分支名稱必須包含 `issue-{編號}`）：
-```bash
-# 如果是修 Bug
-git checkout -b bugfix/issue-42-fix-cart-button
-
-# 如果是開發新功能
-git checkout -b feature/issue-42-sms-login
-
-```
-
-
+![點選右邊 New Issue 按鈕](image/3-0.bmp)
 
 ---
 
-##  步驟三：提交 Commit 並推送到遠端
+### 步驟 4：填寫議題內容
+在建立新議題的頁面中，請依序完成以下欄位填寫：
+* **[Add a title]**：輸入該 Issue 的標題名稱。
+* **[Add a description]**：詳細輸入該議題的描述內容。
 
-程式碼修改完成後，提交 Commit 訊息時請**標註 Issue 編號**，方便日後追蹤。
-
-1. **提交 Commit**：
-```bash
-git add .
-git commit -m "fix(cart): resolve checkout button click issue (#42)"
-
-```
-
-
-2. **推送到遠端倉庫**：
-```bash
-git push origin bugfix/issue-42-fix-cart-button
-
-```
-
-
+![輸入標題與描述](image/3-1.bmp)
 
 ---
 
-##  步驟四：發起 Pull Request (PR) 與自動關閉
+### 步驟 5：指派負責人 (Assignees)
+在頁面右側的 **[Assignees]** 區域點選設定圖示（齒輪），於 **[Select assignees]** 列表中點選欲指派的對象。
 
-1. 回到 GitHub/GitLab 專案頁面，點擊 **Compare & pull request**。
-2. **關鍵自動化步驟**：在 PR 的描述（Description）欄位中，寫上：
-```markdown
-Closes #42
+![指派負責人](image/3-2.bmp)
 
-```
+---
 
+### 步驟 6：設定議題性質 (Labels)
+在右側的 **[Labels]** 區域點選設定圖示（齒輪），依據該議題的性質選擇對應的標籤。
 
-*(寫了這行，當 PR 被審查並合併（Merge）後，系統就會**自動關閉**第 42 號 Issue，不需手動去點 Close！)*
-3. 指派 Code Reviewer（審查者），等待合併。
-"""
+![點選議題性質](image/4.bmp)
 
-file_path = "README.md"
-with open(file_path, "w", encoding="utf-8") as f:
-f.write(markdown_content)
+> ?? **關於 Labels 的說明：**
+> Labels 性質預設已經內建 9 種，也可以依據需求自訂 Labels。目前預設的 Labels 包含：
+> * `bug`：問題（程式出錯）
+> * `documentation`：文件修正或新增
+> * `duplicate`：重複問題
+> * `enhancement`：新功能或請求
+> * `good first issue`：適合新手的簡單議題
+> * `help wanted`：需要額外關注與協助
+> * `invalid`：不正確或無效的議題
+> * `question`：疑問
+> * `wontfix`：不會進行處理或修復
 
-print(f"File saved successfully at {file_path}")
+---
 
-```
+### 步驟 7：提交並建立 Issue
+確認所有欄位與設定皆填寫完成後（填寫範例如下圖所示），點選右下角的綠色 **[Create]** 或 **[Submit new issue]** 按鈕送出。
+
+*(範例：標題輸入「建立git issue的操作細節粗略」，描述輸入「步驟需要增加更多細節說明」，並掛上 `documentation` 標籤)*
+
+![議題填寫完成範例](image/5-0.bmp)
+
+---
+
+## ?? 檢視與追蹤狀態
+
+點入可看議題細節和處理狀態。
+
+![點入查看議題細節與狀態](image/5-1.bmp)
