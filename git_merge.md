@@ -28,13 +28,13 @@
 
 **查看分支列表**
 
-git branch \--list
+`git branch \--list`
 
 ![](image/mergeex/image7.png)
 
 查看在分支\[main\]底下的操作記錄
 
-git log \--oneline \--graph \--decorate \--all
+`git log \--oneline \--graph \--decorate \--all`
 
 ![](image/mergeex/image15.png)
 
@@ -42,7 +42,7 @@ git log \--oneline \--graph \--decorate \--all
 
 **建立全新的分支**
 
-git branch \[branch name\]
+`git branch \[branch name\]`
 
 ![](image/mergeex/image21.png)
 
@@ -55,7 +55,7 @@ git branch \[branch name\]
 
 **切換到新創的分支**
 
-git switch \[branch name\]
+`git switch \[branch name\]`
 
 ![](image/mergeex/image6.png)
 
@@ -71,7 +71,7 @@ git switch \[branch name\]
 
 ![](image/mergeex/image2.png)
 
-當切換回分支\[main\]時，**[HEAD]{.underline}**會指回\[main\]
+當切換回分支\[main\]時，[**HEAD**]會指回\[main\]
 
 ![](image/mergeex/image5.png)
 
@@ -135,7 +135,7 @@ git switch \[branch name\]
 
 **刪除指定的分支:**
 
-git branch -d \[branch name\]
+`git branch -d \[branch name\]`
 
 ![](image/mergeex/image10.png)
 
