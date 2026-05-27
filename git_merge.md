@@ -30,13 +30,13 @@
 
 git branch \--list
 
-![](image/mergeex/image7.png){width="2.9531255468066493in" height="0.39836832895888014in"}
+![](image/mergeex/image7.png)
 
 查看在分支\[main\]底下的操作記錄
 
 git log \--oneline \--graph \--decorate \--all
 
-![](image/mergeex/image15.png){width="5.598958880139983in" height="0.5673359580052494in"}
+![](image/mergeex/image15.png)
 
 其中在說明\[Initial commit\]中，是新創repository的記錄，再上一行的說明\[Add psucode.md\]是新增文件**psucode.md**以及加入內容.
 
@@ -44,79 +44,75 @@ git log \--oneline \--graph \--decorate \--all
 
 git branch \[branch name\]
 
-![](image/mergeex/image21.png){width="3.369792213473316in" height="0.8670811461067367in"}
+![](image/mergeex/image21.png)
 
 雖然已在此repository之中創建新的分支，但目前操控分支仍停留在\[main\]
 
 在查看記錄之中，此節點屬於分支\[main\]和\[projectB\]
 
-![](image/mergeex/image16.png){width="4.755208880139983in" height="0.3472364391951006in"}
-
+![](image/mergeex/image16.png)
 **切換到新創的分支**
 
 git switch \[branch name\]
 
-![](image/mergeex/image6.png){width="3.3177088801399823in" height="1.022483595800525in"}
+![](image/mergeex/image6.png)
 
 當查看操作記錄，會看到選定的分支換成\[projectB\]
 
-![](image/mergeex/image8.png){width="4.421875546806649in" height="0.36692147856517937in"}
+![](image/mergeex/image8.png)
 
-更新檔案\[[[psucode.md]{.underline}](http://psucode.md)\]之後，可以看到選定分支節點已前進.
+更新檔案\[[[psucode.md]]\]之後，可以看到選定分支節點已前進.
 
-![](image/mergeex/image11.png){width="5.140625546806649in" height="1.7336668853893262in"}
+![](image/mergeex/image11.png)
 
 顯示內容:
 
-![](image/mergeex/image2.png){width="4.609375546806649in" height="0.7651192038495188in"}
+![](image/mergeex/image2.png)
 
 當切換回分支\[main\]時，**[HEAD]{.underline}**會指回\[main\]
 
-![](image/mergeex/image5.png){width="5.151042213473316in" height="2.136218285214348in"}
+![](image/mergeex/image5.png)
 
 內容也會變回原本分支的原文:
 
-![](image/mergeex/image17.png){width="3.619792213473316in" height="0.8299037620297463in"}
+![](image/mergeex/image17.png)
 
 隨著分支的切換，同檔案下的內容也跟著改變.
 
 隨著分支的發展推進，會看到顯著的樹狀結構圖
 
-![](image/mergeex/image13.png){width="5.161458880139983in" height="2.8397987751531057in"}
+![](image/mergeex/image13.png)
 
 分支\[main\]持續向上更新
 
-![](image/mergeex/image20.png){width="5.151042213473316in" height="1.2055632108486438in"}
-
+![](image/mergeex/image20.png)
 目前在分支\[main\]內容
 
-![](image/mergeex/image4.png){width="2.838542213473316in" height="1.2293678915135609in"}
-
+![](image/mergeex/image4.png)
 目前在分支\[projectB\]內容
 
-![](image/mergeex/image9.png){width="3.673652668416448in" height="0.9355260279965004in"}
+![](image/mergeex/image9.png)
 
 分支記錄
 
-![](image/mergeex/image18.png){width="5.567708880139983in" height="1.3965518372703412in"}
+![](image/mergeex/image18.png)
 
 **合併分支:**
 
 創建新的分支，並切換到新創的分支\[desfix\]
 
-![](image/mergeex/image14.png){width="3.0781255468066493in" height="0.7575448381452319in"}
+![](image/mergeex/image14.png)
 
 在分支\[desfix\]之下，內容修改
 
-![](image/mergeex/image19.png){width="5.776042213473316in" height="1.4104286964129484in"}
-
+![](image/mergeex/image19.png)
 切換回分支\[main\]
 
-![](image/mergeex/image3.png){width="3.0468755468066493in" height="0.3385422134733158in"}
+![](image/mergeex/image3.png)
 
 執行合併(merge)動作
 
-![](image/mergeex/image12.png){width="2.994792213473316in" height="0.85000656167979in"}
+![](image/mergeex/image12.png)
 
 指令中所謂合併(merge)分支\[desfix\]
 
@@ -124,11 +120,11 @@ git switch \[branch name\]
 
 合併前後內容:
 
-![](image/mergeex/image1.png){width="5.713542213473316in" height="1.6798950131233596in"}
+![](image/mergeex/image1.png)
 
 操作記錄:
 
-![](image/mergeex/image22.png){width="6.267716535433071in" height="1.9027777777777777in"}
+![](image/mergeex/image22.png)
 
 從操作記錄可以很清楚看到，在分支\[main\]先新增內容，然後合入分支\[desfix\]的修改內容
 
@@ -136,6 +132,6 @@ git switch \[branch name\]
 
 git branch -d \[branch name\]
 
-![](image/mergeex/image10.png){width="6.267716535433071in" height="2.5555555555555554in"}
+![](image/mergeex/image10.png)
 
 在刪除分支\[desfix\]之後，相關操作記錄還是存在，但分支名稱就消失了.
