@@ -28,13 +28,13 @@
 
 **查看分支列表**
 
-`git branch \--list`
+`git branch --list`
 
 ![](image/mergeex/image7.png)
 
 查看在分支\[main\]底下的操作記錄
 
-`git log \--oneline \--graph \--decorate \--all`
+`git log --oneline --graph --decorate --all`
 
 ![](image/mergeex/image15.png)
 
@@ -42,7 +42,7 @@
 
 **建立全新的分支**
 
-`git branch \[branch name\]`
+`git branch [BRANCH_NAME]`
 
 ![](image/mergeex/image21.png)
 
@@ -55,7 +55,7 @@
 
 **切換到新創的分支**
 
-`git switch \[branch name\]`
+`git switch [BRANCH_NAME]`
 
 ![](image/mergeex/image6.png)
 
@@ -63,7 +63,7 @@
 
 ![](image/mergeex/image8.png)
 
-更新檔案\[[[psucode.md]]\]之後，可以看到選定分支節點已前進.
+更新檔案\[psucode.md\]之後，可以看到選定分支節點已前進.
 
 ![](image/mergeex/image11.png)
 
@@ -135,7 +135,7 @@
 
 **刪除指定的分支:**
 
-`git branch -d \[branch name\]`
+`git branch -d [BRANCH_NAME]`
 
 ![](image/mergeex/image10.png)
 
