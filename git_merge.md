@@ -51,6 +51,8 @@ git branch \[branch name\]
 在查看記錄之中，此節點屬於分支\[main\]和\[projectB\]
 
 ![](image/mergeex/image16.png)
+
+
 **切換到新創的分支**
 
 git switch \[branch name\]
@@ -86,9 +88,11 @@ git switch \[branch name\]
 分支\[main\]持續向上更新
 
 ![](image/mergeex/image20.png)
+
 目前在分支\[main\]內容
 
 ![](image/mergeex/image4.png)
+
 目前在分支\[projectB\]內容
 
 ![](image/mergeex/image9.png)
@@ -106,6 +110,7 @@ git switch \[branch name\]
 在分支\[desfix\]之下，內容修改
 
 ![](image/mergeex/image19.png)
+
 切換回分支\[main\]
 
 ![](image/mergeex/image3.png)
