@@ -31,7 +31,7 @@ pip install flask
 Organize your project directory as follows:
 
 ```text
-flask_app/
+Web_Service/
 |-- server.py
 |-- index.html
 `-- run.bat
@@ -105,8 +105,8 @@ Create a file named `run.bat` to start the Python server and open the page autom
 @echo off
 title Python Web Server Launcher
 
-echo Starting Flask Web Server...
-start "Flask Server" python server.py
+echo Starting Web Server...
+start "Web Server" python server.py
 
 :: Wait 2 seconds for server initialization
 timeout /t 2 /nobreak >nul
