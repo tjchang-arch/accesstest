@@ -32,10 +32,9 @@ Organize your project directory as follows:
 
 ```text
 flask_app/
-¢u¢w¢w server.py
-¢u¢w¢w index.html
-¢|¢w¢w run.bat
-
+|-- server.py
+|-- index.html
+`-- run.bat
 ```
 
 ### index.html
