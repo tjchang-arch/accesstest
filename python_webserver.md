@@ -28,7 +28,7 @@ pip install flask
 
 ## 2. Project Structure & Sample Code
 
-Organize your project directory as follows:
+Organize project (ex: Web_Service) directory as follows:
 
 ```text
 Web_Service/
